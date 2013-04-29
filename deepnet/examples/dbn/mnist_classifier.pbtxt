@@ -55,7 +55,7 @@ layer {
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_rbm1_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_rbm1_LAST"
   }
   hyperparams {
     sparsity_target: 0.1
@@ -73,7 +73,7 @@ layer {
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_dbn2_rbm_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_dbn2_rbm_LAST"
   }
   hyperparams {
     sparsity_target: 0.1
@@ -91,7 +91,7 @@ layer {
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_dbn3_rbm_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_dbn3_rbm_LAST"
   }
   hyperparams {
     sparsity_target: 0.05
@@ -109,7 +109,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_rbm1_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_rbm1_LAST"
   }
   receptive_field_width: 28
   display_rows: 32
@@ -121,7 +121,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_dbn2_rbm_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_dbn2_rbm_LAST"
   }
 }
 edge {
@@ -130,7 +130,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_dbn3_rbm_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_dbn3_rbm_LAST"
   }
 }
 edge {

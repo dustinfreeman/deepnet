@@ -22,7 +22,7 @@ layer {
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_autoencoder_relu_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_autoencoder_relu_LAST"
   }
 }
 layer {
@@ -31,7 +31,7 @@ layer {
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_autoencoder_relu_2layer_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_autoencoder_relu_2layer_LAST"
   }
 }
 layer {
@@ -65,7 +65,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_autoencoder_relu_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_autoencoder_relu_LAST"
   }
   receptive_field_width: 28
   display_rows: 16
@@ -77,7 +77,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_autoencoder_relu_2layer_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_autoencoder_relu_2layer_LAST"
   }
 }
 edge {

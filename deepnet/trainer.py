@@ -33,12 +33,16 @@ def LoadExperiment(model_file, train_op_file, eval_op_file):
 
 def CreateDeepnet(model, train_op, eval_op):
   if model.model_type == deepnet_pb2.Model.FEED_FORWARD_NET:
+    print "===============feedforward"
     return NeuralNet(model, train_op, eval_op)
   elif model.model_type == deepnet_pb2.Model.DBM:
+    print "===============DBM"
     return DBM(model, train_op, eval_op)
   elif model.model_type == deepnet_pb2.Model.DBN:
+    print "================DBN"
     return DBN(model, train_op, eval_op)
   elif model.model_type == deepnet_pb2.Model.SPARSE_CODER:
+    print "================SPARSE CODER"
     return SparseCoder(model, train_op, eval_op)
   else:
     raise Exception('Model not implemented.')

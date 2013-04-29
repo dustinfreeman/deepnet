@@ -10,7 +10,7 @@ layer {
   param {
     name: "bias_generative"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_rbm1_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_rbm1_LAST"
     pretrained_model_param_name: "bias"
   }
   is_input: true
@@ -27,12 +27,12 @@ layer {
   param {
     name: "bias_generative"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_dbn2_rbm_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_dbn2_rbm_LAST"
   }
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_rbm1_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_rbm1_LAST"
   }
   shape: 32
   shape: 32
@@ -47,7 +47,7 @@ layer {
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_dbn2_rbm_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_dbn2_rbm_LAST"
   }
   loss_function: SQUARED_LOSS
   performance_stats {
@@ -75,7 +75,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_rbm1_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_rbm1_LAST"
     transpose_pretrained: true
   }
   receptive_field_width: 28
@@ -88,7 +88,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_dbn2_rbm_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_dbn2_rbm_LAST"
     transpose_pretrained: true
   }
 }

@@ -21,7 +21,7 @@ layer {
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_autoencoder_relu_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_autoencoder_relu_LAST"
   }
 }
 layer {
@@ -46,7 +46,7 @@ layer {
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_autoencoder_relu_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_autoencoder_relu_LAST"
   }
   is_output: true
   loss_function: SQUARED_LOSS
@@ -70,7 +70,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_autoencoder_relu_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_autoencoder_relu_LAST"
   }
   hyperparams {
     enable_display: false
@@ -103,7 +103,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_autoencoder_relu_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_autoencoder_relu_LAST"
     pretrained_model_node1: "hidden1"
     pretrained_model_node2: "output_layer"
   }

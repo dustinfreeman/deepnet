@@ -10,7 +10,7 @@ layer {
   param {
     name: "bias_generative"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_rbm1_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_rbm1_LAST"
     pretrained_model_param_name: "bias"
   }
   is_input: true
@@ -34,7 +34,7 @@ layer {
   param {
     name: "bias"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_rbm1_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_rbm1_LAST"
   }
   loss_function: SQUARED_LOSS
   hyperparams {
@@ -65,7 +65,7 @@ edge {
   param {
     name: "weight"
     initialization: PRETRAINED
-    pretrained_model: "/h/165/dustin/ML2013Project/downloads/mnist_results/mnist_rbm1_LAST"
+    pretrained_model: "/h/165/dustin/ML2013Project/data/ba_results/mnist_rbm1_LAST"
     transpose_pretrained: true
   }
 }

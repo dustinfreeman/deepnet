@@ -1,8 +1,8 @@
-name: "mnist_conv"
+name: "ba_conv"
 model_type: FEED_FORWARD_NET
 layer {
   name: "input_layer"
-  dimensions: 784
+  dimensions: 1024
   is_input: true
   hyperparams {
     activation: LINEAR
@@ -12,14 +12,14 @@ layer {
     validation: "validation_data"
     test: "test_data"
   }
-  shape: 28
-  shape: 28
+  shape: 32
+  shape: 32
   shape: 1
 }
 layer {
   name: "output_layer"
   dimensions: 1
-  numlabels: 10
+  numlabels: 2
   param {
     name: "bias"
     initialization: CONSTANT
@@ -42,7 +42,14 @@ layer {
 }
 layer {
   name: "hidden1"
-  dimensions: 10816
+# nloc = (x_width + 2*padding - size)/stride + 1
+# = (32 + 2* 2- 5)/1 + 1 = 32
+# pooling:
+# nloc = (nloc + 2*padding - size )/stride + 1
+# = (32 + 2* 0 - 3)/2 + 1 = 15
+# dims = num_filters * nloc**2
+# dims = 64 * 15**2    
+  dimensions: 14400
   param {
     name: "bias"
     initialization: CONSTANT
@@ -53,7 +60,15 @@ layer {
 }
 layer {
   name: "hidden2"
-  dimensions: 2304
+ # dimensions calculated using same method as above.
+# nloc = (x_width + 2*padding - size)/stride + 1
+# = (15 + 2* 2- 5)/1 + 1 = 15
+# pooling:
+# nloc = (nloc + 2*padding - size )/stride + 1
+# = (15 + 2* 0 - 3)/2 + 1 = 7
+# dims = num_filters * nloc**2
+# dims = 64 * 7**2
+  dimensions: 3136
   param {
     name: "bias"
     initialization: CONSTANT

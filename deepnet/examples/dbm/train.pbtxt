@@ -5,9 +5,9 @@ stopcondition {
 }
 train: true
 batchsize: 100
-data_proto: "/h/165/dustin/ML2013Project/downloads/mnist/mnist.pbtxt"
+data_proto: "/h/165/dustin/ML2013Project/data/ba/mnist.pbtxt"
 eval_after: 500
 checkpoint_after: 100000
-checkpoint_directory: "/h/165/dustin/ML2013Project/downloads/mnist_results"
+checkpoint_directory: "/h/165/dustin/ML2013Project/data/ba_results"
 randomize: false
 show_after: 500
