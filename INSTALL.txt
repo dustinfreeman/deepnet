@@ -43,10 +43,10 @@ University of Toronto.
 (4) SET ENVIRONMENT VARIABLES
   - Add the path to cudamat and cudamat_conv to LD_LIBRARY_PATH. For example if
     DeepNet is located in the home dir,
-      export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/deepnet/cudamat:$HOME/deepnet/cudamat_conv
+      export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/ML2013Project/deepnet/cudamat:$HOME/ML2013Project/deepnet/cudamat_conv
   - Add the path to DeepNet to PYTHONPATH. For example, if DeepNet is located in the
     home dir,
-      export PYTHONPATH=$HOME/deepnet:$PYTHONPATH
+      export PYTHONPATH=$HOME/ML2013Project/deepnet:$PYTHONPATH
 
 (5) RUN EXAMPLES
   - Download and extract the MNIST dataset from http://www.cs.toronto.edu/~nitish/deepnet/mnist.tar.gz
