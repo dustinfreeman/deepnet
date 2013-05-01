@@ -576,6 +576,7 @@ class NeuralNet(object):
       op = self.e_op
     handles = GetDataHandles(op, name_list, hyp_list,
                              verbose=self.verbose)
+    print "------------- handles " + str(handles)
     self.train_data_handler = handles[0]
     self.validation_data_handler = handles[1]
     self.test_data_handler = handles[2]
