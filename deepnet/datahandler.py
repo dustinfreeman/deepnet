@@ -28,7 +28,6 @@ class Disk(object):
     self.num_data = len(filenames)
     self.numdim_list = numdim_list
     self.filenames = filenames
-    print " > > > > > filenames " + str(filenames)
 
     self._num_file_list = [len(filename_list) for filename_list in filenames]
     self._maxpos = total_size
@@ -64,7 +63,6 @@ class Disk(object):
       numdims = self.numdim_list[i]
       filename_list = self.filenames[i]
       num_files = self._num_file_list[i]
-      print ">>>>>>> self._num_file_list " + str(self._num_file_list)
       current_file = (self.last_read_file[i] + 1) % num_files
       sparse = os.path.splitext(filename_list[current_file])[1] == '.npz'
 
