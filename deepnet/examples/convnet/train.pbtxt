@@ -4,7 +4,7 @@ stopcondition {
   steps: 100000
 }
 train: true
-batchsize: 100
+batchsize: 128
 data_proto: "/h/165/dustin/ML2013Project/data/ba/ba.pbtxt"
 eval_after: 500
 checkpoint_after: 10000
